@@ -1,1 +1,98 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+:root {
+  --blanco: #FFFFFF;
+  --blanco-crema: #F2F7F5;
+  --amarillo: #FAAE2B;
+  --verde-orcuro: #00473E;
+  --anaranjado: #FF7500;
+  --negro: #292929;
+  --negro2: #121212;
+  --gris: #565656;
+
+  /* --header: #202124; */
+  --header: #F2F7F5;
+  --header-font-color: #0D6EFD;
+  --header-button-hover: #064eb9;
+  --text1: #000;
+  --text2: #292929;
+  --text3: #e4e0dd;
+  --text4:#09647a;
+
+  --fuente-principal: 'Montserrat', sans-serif;;
+}
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* 1rem = 10px*/
+  /* padding: 0; */
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+/* Globales */
+body {
+  /* background-color: var(--blanco-crema); */
+  /* font-family: 'Montserrat', sans-serif; */
+  font-size: 1.6rem;
+  /* overflow-x: hidden; */
+}
+
+.contenedor{
+  max-width: 200rem;
+  width: 95%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 4.8rem;
+}
+h2 {
+  font-size: 4rem;
+}
+h3 {
+  font-size: 3.2rem;
+}
+h4 {
+  font-size: 2.8rem;
+}
+
+
+img {
+  max-width: 100%;
+}
+
+/* Utilidades */
+.no-margin {
+  margin: 0;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.centrar-texto {
+  text-align: center;
+}
+
+@media (min-width: 576px) {
+  .contenedor{
+    width: 90%;
+  }
+}
+
+@media (min-width: 992px) {
+  .contenedor{
+    width: 85%;
+  }
+}
+
+
