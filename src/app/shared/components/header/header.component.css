@@ -4,15 +4,24 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
+.nav-container {
+  background-color: var(--amarillo);
+  display: flex;
+  justify-content: center;
+}
+
 nav {
   display: flex;
+  position: relative;
   height: 100px;
   width: 100%;
-  background: var(--amarillo);
+
   align-items: center;
   justify-content: space-between;
   padding: 0 50px 0 100px;
   flex-wrap: wrap;
+  z-index: 99;
 }
 
 .logo-img {
@@ -32,7 +41,7 @@ nav ul li a {
   color: #f2f2f2;
   text-decoration: none;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 600;
   padding: 8px 15px;
   border-radius: 5px;
   letter-spacing: 1px;
@@ -52,11 +61,6 @@ nav .menu-btn i {
 input[type="checkbox"] {
   display: none;
 }
-
-/* .none {
-  display: none;
-} */
-
 
 @media (max-width: 1000px) {
   nav {
@@ -107,18 +111,19 @@ input[type="checkbox"] {
     color: var(--amarillo);
   }
 }
-.content {
+/* .content {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  z-index: -1;
+  z-index: 9;
   width: 100%;
   padding: 0 30px;
   color: #1b1b1b;
-}
-.content div {
+} */
+
+/* .content div {
   font-size: 40px;
   font-weight: 700;
-}
+} */
