@@ -1,8 +1,16 @@
+.header-contacto-container {
+  background-color: #12a50b;
+}
 
 .navbar{
   font-family: var(--fuente-principal);
   display: flex;
-  /* justify-content: center; */
+  background-color: #1d4292;
+}
+
+.container {
+  padding: 0;
+
 }
 
 .card {

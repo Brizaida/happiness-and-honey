@@ -1,17 +1,30 @@
 <div class="nav-container">
   <nav class="contenedor">
     <div class="logo">
-      <img routerLink="product" class="logo-img" src="assets/logo.png" alt="">
+      <img routerLink="product" class="logo-img" src="assets/logo.png" alt="" />
     </div>
 
-    <input [ngModel]="click" (ngModelChange)="click = $event" type="checkbox" id="click" />
+    <input
+      [ngModel]="click"
+      (ngModelChange)="click = $event"
+      type="checkbox"
+      id="click"
+    />
     <label for="click" class="menu-btn">
       <i class="fas fa-bars"></i>
     </label>
 
-    <ul [ngClass]="{'none': click}">
-      <li  *ngFor="let item of nav" >
-        <a (click)="onClick()" for="click" [routerLink]="item.route" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">{{ item.name }}</a>
+    <ul [ngClass]="{ none: click }">
+      <li *ngFor="let item of nav">
+        <a
+          (click)="onClick()"
+          for="click"
+          [routerLink]="item.route"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+        >
+          {{ item.name }}
+        </a>
       </li>
     </ul>
   </nav>
