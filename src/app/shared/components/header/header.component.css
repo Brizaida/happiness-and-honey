@@ -7,7 +7,7 @@
 }
 
 nav {
-  background-color: red !important;
+  /* background-color: red !important; */
   display: flex;
   position: relative;
   height: 100px;

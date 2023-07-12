@@ -1,11 +1,11 @@
 .header-contacto-container {
-  background-color: #12a50b;
+  /* background-color: #12a50b !important; */
+  background-color: #1d4292 !important;
 }
 
 .navbar{
   font-family: var(--fuente-principal);
   display: flex;
-  background-color: #1d4292;
 }
 
 .container {
@@ -67,7 +67,7 @@
 }
 
 .card .social-link3:hover {
-  background-color: #1d4292;
+  background-color: #1877f2;
   animation: bounce_613 0.4s linear;
 }
 

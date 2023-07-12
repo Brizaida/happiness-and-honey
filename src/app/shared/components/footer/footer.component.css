@@ -1,73 +1,118 @@
 
 footer {
+  font-size: 16px;
+  background: #0e1219;
   color: white;
-}
-
-.footer-section {
-  background: #0E1219;
-}
-
-.div-container {
-  background-color: darkslategray;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  /* flex-wrap: wrap; */
-  gap: 1rem;
-  justify-content: space-between;
+  width: 100%;
+  bottom: 0px;
 }
 
-.div-container > div {
-  /* width: 20rem; */
-  height: 100%;
-  padding: 1rem;
-  text-align: center;
+.footer-top-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 48px;
+  margin: 16px auto;
+  padding: 16px;
+  min-height: 160px;
 }
 
-ul {
+.footer-top-wrapper > section {
+  width: 180px;
+}
+
+i {
+  font-size: 32px;
+}
+
+h2 {
+  text-align: left;
+  color: #d2d0e6;
+  margin-top: 0px;
+  opacity: 0.7;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+menu {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  list-style-type: none;
   padding: 0;
   margin: 0;
+}
+
+a {
+  color: white !important;
+  cursor: pointer;
+}
+
+a:hover {
+  color: var(--amarillo) !important;
+}
+
+.logo {
+  width: 80px;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.iconos-redes-sociales {
   display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  justify-content: space-between;
-  height: 100%;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-li {
-  list-style: none;
+.iconos-redes-sociales a{
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  margin: 5px;
+  border: 2px solid white;
+  border-radius: 50%;
+  transition: all 0.2s ease-in;
 }
 
-.rojo {
-  background-color: red;
+.iconos-redes-sociales i {
+  color: white;
+  font-size: 1.5rem;
+  transition: all 0.2s ease-in;
 }
 
-.verde {
-  background-color: green;
+.iconos-redes-sociales a:hover {
+  background-color: white;
+  border: 2px solid var(--amarillo);
 }
 
-.marron {
-  background-color: brown;
+.iconos-redes-sociales a:hover i {
+  color: black;
 }
 
-.morado {
-  background-color: purple;
+.footer-top {
+  max-width: 800px;
 }
-
-
-
 
 .footer-bottom {
-    height: 60px;
-    /* margin-top: 48px; */
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    background-color: #1f1b3d;
-    padding: 4px;
+  height: 60px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #1f1b3d;
+  padding: 4px;
 }
 
 .footer-bottom > small {
-    font-size: 16px;
+  font-size: 16px;
+  margin: 0 4px;
 }
