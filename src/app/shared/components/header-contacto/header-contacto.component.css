@@ -1,5 +1,4 @@
 .header-contacto-container {
-  /* background-color: #12a50b !important; */
   background-color: #1d4292 !important;
 }
 
@@ -10,7 +9,6 @@
 
 .container {
   padding: 0;
-
 }
 
 .card {
@@ -91,5 +89,11 @@
 
   100% {
     transform: scale(1);
+  }
+}
+
+@media (max-width: 920px) {
+  .navbar {
+    display: none;
   }
 }

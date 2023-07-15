@@ -90,10 +90,4 @@ img {
   }
 }
 
-@media (min-width: 992px) {
-  .contenedor{
-    width: 85%;
-  }
-}
-
 

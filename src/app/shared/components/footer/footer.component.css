@@ -12,11 +12,12 @@ footer {
 
 .footer-top-wrapper {
   display: flex;
-  justify-content: center;
+  justify-content:center;
   flex-wrap: wrap;
   gap: 48px;
   margin: 16px auto;
-  padding: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   min-height: 160px;
 }
 
@@ -56,9 +57,12 @@ a:hover {
 }
 
 .logo {
-  width: 80px;
+  width: 120px;
   margin-bottom: 8px;
   cursor: pointer;
+  background-color: var(--amarillo);
+  padding: .5rem;
+  border-radius: 1rem;
 }
 
 .iconos-redes-sociales {
@@ -97,8 +101,13 @@ a:hover {
   color: black;
 }
 
+.list-container, h2 {
+  text-align: center;
+}
+
 .footer-top {
   max-width: 800px;
+  text-align: center;
 }
 
 .footer-bottom {
@@ -115,4 +124,10 @@ a:hover {
 .footer-bottom > small {
   font-size: 16px;
   margin: 0 4px;
+}
+
+@media (min-width: 1200px) {
+  .footer-top-wrapper {
+    justify-content: space-between;
+  }
 }

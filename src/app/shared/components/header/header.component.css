@@ -1,4 +1,3 @@
-
 .nav-container {
   font-family: "Poppins", sans-serif;
   background-color: var(--amarillo);
@@ -13,6 +12,7 @@ nav {
   height: 100px;
 
   align-items: center;
+  align-content: center;
   justify-content: space-between;
   flex-wrap: wrap;
   z-index: 99;
@@ -24,6 +24,7 @@ nav {
 }
 
 nav ul {
+  margin-bottom: 0;
   display: flex;
   flex-wrap: wrap;
   list-style: none;
@@ -60,6 +61,7 @@ input[type="checkbox"] {
     padding: 0 40px 0 50px;
   }
 }
+
 @media (max-width: 920px) {
   nav .menu-btn i {
     display: block;
@@ -102,6 +104,13 @@ input[type="checkbox"] {
   nav ul li a:hover {
     background: none;
     color: var(--amarillo);
+  }
+}
+
+@media (max-width: 1200px) {
+  nav {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
