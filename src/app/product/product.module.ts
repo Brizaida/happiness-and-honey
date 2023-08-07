@@ -8,6 +8,8 @@ import { NosotrosComponent } from './pages/nosotros/nosotros.component';
 import { ProductosComponent } from './pages/productos/productos.component';
 import { TipsComponent } from './pages/tips/tips.component';
 import { ContactoComponent } from './pages/contacto/contacto.component';
+import { ProductoComponent } from './components/producto/producto.component';
+import { BannerComponent } from './components/banner/banner.component';
 
 
 @NgModule({
@@ -17,7 +19,9 @@ import { ContactoComponent } from './pages/contacto/contacto.component';
     NosotrosComponent,
     ProductosComponent,
     TipsComponent,
-    ContactoComponent
+    ContactoComponent,
+    ProductoComponent,
+    BannerComponent
   ],
   imports: [
     CommonModule,

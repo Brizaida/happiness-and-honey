@@ -1,58 +1,19 @@
-<div id="carrusel" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carrusel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carrusel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carrusel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
+<product-banner></product-banner>
 
-  <div class="carousel-inner">
-    <!-- <div *ngFor="let item of carrousel; let i = index; let first = first" [ngClass]="{'active': first}" class="carousel-item active" data-bs-interval="5000">
-      <img [src]="item.image" class="d-block w-100" [alt]="'imagen' + ( i+ 1 )">
-      <div class="carousel-caption d-none d-md-block">
-        <p class="carousel-text">{{ item.description }}</p>
-      </div>
-    </div> -->
-
-    <div class="carousel-item active" data-bs-interval="5000">
-      <img src="../../../../assets/images/banner1.jpeg" class="d-block w-100" alt="imagen 1">
-      <div class="carousel-caption">
-        <p class="carousel-text">Desafía tus sentidos y déjate seducir por la tentación más natural</p>
-      </div>
-    </div>
-
-    <div class="carousel-item" data-bs-interval="5000">
-      <img src="../../../../assets/images/banner2.jpeg" class="d-block w-100" alt="imagen 2">
-      <div class="carousel-caption">
-        <p class="carousel-text">Nuestra miel es el elixir que despierta tus gustos más refinados y te sumerge en un universo de sabores irresistibles</p>
-      </div>
-    </div>
-
-    <div class="carousel-item" data-bs-interval="5000">
-      <img src="../../../../assets/images/banner3.jpeg" class="d-block w-100" alt="imagen 3">
-      <div class="carousel-caption">
-        <p class="carousel-text">Desafía tus sentidos y déjate seducir por la tentación más natural</p>
-      </div>
-    </div>
-  </div>
-
-  <button class="carousel-control-prev" type="button" data-bs-target="#carrusel" data-bs-slide="prev">
-    <i class="fa-solid fa-circle-left icon" aria-hidden="true"></i>
-    <span class="visually-hidden">Previous</span>
-  </button>
-
-  <button class="carousel-control-next" type="button" data-bs-target="#carrusel" data-bs-slide="next">
-    <i class="fa-solid fa-circle-right icon" aria-hidden="true"></i>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
 
 <div class="home contenedor">
 
-
-  <div class="youtube">
-    <div class="youtube-video">
-      <iframe class="video" height="405" src="https://www.youtube.com/embed/1tOTqcRuk8M?autoplay=1&loop=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <div class="productos">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-5">
+      <product-producto *ngFor="let item of productos" [producto]="item"></product-producto>
     </div>
   </div>
 
+
+  <div class="youtube">
+      <iframe [style]="alto+'; '+ancho" width="560" height="315" src="https://www.youtube.com/embed/LFhP7Goltpo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+
+  <p>{{ ancho }}</p>
+  <p>{{ alto }}</p>
 </div>
