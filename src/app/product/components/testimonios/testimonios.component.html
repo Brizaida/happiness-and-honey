@@ -1,0 +1,56 @@
+<section id="testimonios" class="testimonios seccion-clara">
+  <h2 class="seccion-titulo">Testimonios</h2>
+
+  <h3 class="seccion-descripcion">
+    Estos son algunos testimonios de nuestros clientes
+  </h3>
+
+  <!-- Carrusel -->
+  <div id="testimonios-carrusel" class="carousel carousel-dark slide">
+    <div class="carousel-inner">
+      <div
+        *ngFor="let cliente of clientes; let first = first"
+        class="carousel-item active"
+        [ngClass]="{ active: first }"
+      >
+        <div class="container">
+          <img
+            class="testimonio-imagen"
+            [src]="cliente.foto"
+            [alt]="'Foto de' + cliente.nombre"
+          />
+
+          <p class="testimonio-texto">
+            <i class="fa-solid fa-quote-left"></i>
+            {{ cliente.testimonio }}
+            <i class="fa-solid fa-quote-right"></i>
+          </p>
+
+          <div class="testimonio-info">
+            <p class="cliente">{{ cliente.nombre }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button
+      class="carousel-control-prev"
+      type="button"
+      data-bs-target="#testimonios-carrusel"
+      data-bs-slide="prev"
+    >
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+
+    <button
+      class="carousel-control-next"
+      type="button"
+      data-bs-target="#testimonios-carrusel"
+      data-bs-slide="next"
+    >
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+  </div>
+</section>
