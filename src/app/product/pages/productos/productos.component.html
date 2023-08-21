@@ -1,1 +1,40 @@
-<p>productos works!</p>
+<div class="container">
+  <h1 class="titulo">Productos que ofrecemos</h1>
+  <p class="linea"></p>
+
+  <div class="productos">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-5">
+      <product-producto
+        *ngFor="let item of productos"
+        [producto]="item"
+      ></product-producto>
+    </div>
+  </div>
+
+  <div class="productos">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-5">
+      <product-producto
+        *ngFor="let item of productos"
+        [producto]="item"
+      ></product-producto>
+    </div>
+  </div>
+
+  <div class="productos">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-5">
+      <product-producto
+        *ngFor="let item of productos"
+        [producto]="item"
+      ></product-producto>
+    </div>
+  </div>
+
+  <div class="productos">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-5">
+      <product-producto
+        *ngFor="let item of productos"
+        [producto]="item"
+      ></product-producto>
+    </div>
+  </div>
+</div>

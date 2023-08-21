@@ -16,6 +16,7 @@
 }
 
 .btn-primary {
+  height: 33px;
   background-color: var(--anaranjado);
   border-color: var(--anaranjado);
   font-size: 1.6rem;

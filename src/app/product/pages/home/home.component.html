@@ -1,17 +1,26 @@
 <product-banner></product-banner>
 
-
 <div class="home contenedor">
-
   <div class="productos">
     <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-5">
-      <product-producto *ngFor="let item of productos" [producto]="item"></product-producto>
+      <product-producto
+        *ngFor="let item of productos"
+        [producto]="item"
+      ></product-producto>
     </div>
   </div>
 
-
   <div class="youtube">
-      <iframe [style]="alto+'; '+ancho" width="560" height="315" src="https://www.youtube.com/embed/LFhP7Goltpo?autoplay=1&loop=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe
+      [style]="alto + '; ' + ancho"
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/LFhP7Goltpo?autoplay=1&loop=1&mute=1"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
   </div>
 
   <product-testimonios></product-testimonios>

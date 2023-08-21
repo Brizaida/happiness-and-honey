@@ -1,1 +1,24 @@
-<p>contacto works!</p>
+<div class="contact">
+  <div class="container">
+      <div class="contact__info">
+          <h2 class="info__title">Nos gustaria escuchar sobre ti!</h2>
+          <p class="info__description">Estamos disponible las 24 horas para ayudarte a resolver cualquier duda!</p>
+          <div class="info__about">
+              <li class="about__item"><i class="fa-solid fa-location-dot about__icon"></i><p>Jr. Sinaí S/N - Warpapicchu</p></li>
+              <li class="about__item"><i class="fa-solid fa-phone about__icon" ></i><p>+51 974 435 654</p></li>
+              <li class="about__item"><i class="fa-solid fa-envelope about__icon"></i><p>tucnoperezbrizaida@gmail.com</p></li>
+          </div>
+      </div>
+      <div>
+          <div class="contact__form">
+              <label for="nombre">Tu nombre</label>
+              <input id="name" type="text" name="nombre">
+              <label for="motivo">Motivo</label>
+              <input id="motivo" type="text" name="motivo">
+              <label for="mensaje">Comentario Adicional</label>
+              <textarea name="mensaje" id="comentario" cols="30" rows="4"></textarea>
+              <a class="button" id="redirect" (click)="enviar_sms()" >Enviar <i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+      </div>
+  </div>
+</div>

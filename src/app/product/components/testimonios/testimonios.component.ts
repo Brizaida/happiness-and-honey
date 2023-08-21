@@ -10,19 +10,24 @@ export class TestimoniosComponent {
 
   public clientes: Cliente[] = [
     {
-      nombre: 'Juan',
+      nombre: 'Edith',
       foto: '../../../../assets/images/clientes/profile.png',
-      testimonio: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, ad deserunt. Reiciendis quam saepe, non est sequi culpa delectus.',
+      testimonio: '¡Es increíble disfrutar de una miel artesanal y conocer su origen! Realmente eleva el sabor de mis comidas y bebidas favoritas',
     },
     {
-      nombre: 'Pedro',
+      nombre: 'Luis',
       foto: '../../../../assets/images/clientes/profile.png',
-      testimonio: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, ad deserunt. Reiciendis quam saepe, non est sequi culpa delectus.',
+      testimonio: '¡Me encanta Happiness&Honey! Su selección de mieles orgánicas es impresionante, y puedo disfrutar de diferentes sabores y matices en cada cucharada',
     },
     {
-      nombre: 'Maria',
+      nombre: 'Alonso',
       foto: '../../../../assets/images/clientes/profile.png',
-      testimonio: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, ad deserunt. Reiciendis quam saepe, non est sequi culpa delectus.',
+      testimonio: '¡Descubrí un verdadero tesoro en Happiness&Honey! Sus productos son de alta calidad y sabor excepcional',
+    },
+    {
+      nombre: 'Lucero',
+      foto: '../../../../assets/images/clientes/profile.png',
+      testimonio: '¡Comprobado! Happiness&Honey solo ofrece miel 100% natural',
     }
   ]
 }

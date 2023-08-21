@@ -9,7 +9,10 @@
     <div class="price-container">
       <p class="price">{{ producto.precio | currency: 'S/ ' : 'symbol-narrow' : '1.2-2'}}</p>
 
-      <p class="btn btn-primary">Comprar ahora</p>
+      <a [href]="producto.whatsapp" target="_blank" class="btn btn-primary">
+        Comprar
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
     </div>
   </div>
 </div>
