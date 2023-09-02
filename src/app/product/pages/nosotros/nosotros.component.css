@@ -17,3 +17,14 @@
 .container {
   margin-bottom: 5rem;
 }
+
+#mapa {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#mapa img {
+  max-width: 100%;
+  height: auto;
+  cursor: pointer;
+}
