@@ -12,23 +12,19 @@ cd happiness-and-honey
 ```bash
 https://nodejs.org/es/
 ```
-4. Instalar npm
-```bash
-npm install
-```
-5. Instalar Angular CLI
+4. Instalar Angular CLI
 ```bash
 npm install -g @angular/cli
 ```
-6. Instalar las dependencias
+5. Instalar las dependencias
 ```bash
 npm install
 ```
-7. Ejecutar el proyecto
+6. Ejecutar el proyecto
 ```bash
 ng serve
 ```
-8. Abrir el navegador
+7. Abrir el navegador
 ```bash
 http://localhost:4200/
 ```
